@@ -31,6 +31,9 @@ let
       vim ~/.config/nixpkgs/modules/"$1"/default.nix
     }
   '';
+  aliases = {
+    docker = "podman";
+  };
 in
 {
   programs = {
@@ -62,6 +65,8 @@ in
       ];
 
       initExtra = builtins.concatStringsSep "\n" [zshTheme configs functions];
+
+      shellAliases = aliases;
 
       oh-my-zsh = {
         enable = true;
