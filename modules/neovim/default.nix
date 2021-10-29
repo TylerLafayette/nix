@@ -13,6 +13,8 @@ let
     vim-sleuth
     ## Fuzzy finding
     fzf-vim
+    ## Auto pairs
+    auto-pairs
 
     # Language-specific plugins
     ## Language support

@@ -8,6 +8,7 @@ let
     yarn
     rustup
     go
+    gopls
     ## Containers and virtualization
     qemu
     # Unfortunately, podman doesn't seem to work correctly from nixpkgs.

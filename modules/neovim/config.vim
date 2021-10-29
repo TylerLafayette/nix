@@ -9,10 +9,14 @@ augroup line_highlights
 	autocmd!
 	autocmd ColorScheme * hi LineNr 	gui=NONE guibg=NONE
 			  \ | hi CursorLineNr 	gui=NONE guibg=NONE
+			  \ | hi SignColumn	gui=NONE guibg=NONE
 augroup END
 
 " Relative numbers (with current absolute number shown next to cursor)
 set number relativenumber
+
+" Always show gutter
+set signcolumn=yes
 
 " Configure fzf colors
 let g:fzf_colors =
