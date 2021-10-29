@@ -4,6 +4,13 @@ set termguicolors
 " Set our colorscheme
 colorscheme iceberg
 
+" Colorscheme overrides
+augroup line_highlights
+	autocmd!
+	autocmd ColorScheme * hi LineNr 	gui=NONE guibg=NONE
+			  \ | hi CursorLineNr 	gui=NONE guibg=NONE
+augroup END
+
 " Relative numbers (with current absolute number shown next to cursor)
 set number relativenumber
 

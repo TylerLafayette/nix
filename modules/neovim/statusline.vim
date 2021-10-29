@@ -29,7 +29,7 @@ endfunction
 set statusline+=%{StatuslineGit()}
 
 " Colors
-augroup highlights 
+augroup status_highlights 
 	autocmd!
 	autocmd ColorScheme * hi StatusLine gui=NONE guibg=terminal_color_0
 "			  \ | 
