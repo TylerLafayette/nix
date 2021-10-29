@@ -8,6 +8,12 @@ let
     yarn
     rustup
     go
+    ## Containers and virtualization
+    qemu
+    # Unfortunately, podman doesn't seem to work correctly from nixpkgs.
+    # Currently using the brew version instead.
+    # podman
+    # podman-compose
 
     # Version control
     git
@@ -19,6 +25,8 @@ let
 
     # Utility
     htop
+    xz
+    gvproxy
   ];
 in
 {

@@ -17,6 +17,9 @@ let
 
     # TODO: not do this, idk why this is necessary
     source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+    # This is so sad
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   '';
   functions = ''
     # Convenience function to open home.nix.
