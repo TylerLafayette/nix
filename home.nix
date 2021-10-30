@@ -26,6 +26,7 @@ let
 
     # Utility
     htop
+    tree
     xz
     gvproxy
   ];

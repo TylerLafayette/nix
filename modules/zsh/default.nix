@@ -33,6 +33,8 @@ let
   '';
   aliases = {
     docker = "podman";
+    # Pretty-print tree excluding generated directories
+    list = "tree -L 2 -C -I 'node_modules|vendor|build|target'";
   };
 in
 {
